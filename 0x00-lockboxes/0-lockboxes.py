@@ -12,7 +12,7 @@ def canUnlockAll(boxes):
         if boxes[i]:
             box = boxes[i]
             for j in box:
-                if j not in list_keys and j != 0:
+                if j not in list_keys and j != 0 and j < len(boxes):
                     list_keys.append(j)
     if len(list_keys) != 0:
         list_keys.sort()
