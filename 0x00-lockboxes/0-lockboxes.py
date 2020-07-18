@@ -5,7 +5,7 @@
 def canUnlockAll(boxes):
     """returns True or False"""
 
-    if len(boxes) == 1:
+    if len(boxes) == 1 or len(boxes) == 0:
         return True
     if len(boxes[0]) == 0:
         return False
