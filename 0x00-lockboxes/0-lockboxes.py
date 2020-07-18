@@ -21,6 +21,4 @@ def canUnlockAll(boxes):
             if key != list_keys[key-1]:
                 return False
             key += 1
-        return True
-    else:
-        return True
+    return True
