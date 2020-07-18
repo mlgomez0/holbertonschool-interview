@@ -5,7 +5,7 @@
 def canUnlockAll(boxes):
     """returns True or False"""
     if len(boxes[0]) == 0:
-        return False
+        return True
     list_keys = [x for x in boxes[0] if x != 0]
 
     for i in list_keys:
@@ -23,4 +23,4 @@ def canUnlockAll(boxes):
             key += 1
         return True
     else:
-        return False
+        return True
