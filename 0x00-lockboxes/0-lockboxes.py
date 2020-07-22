@@ -10,7 +10,7 @@ def canUnlockAll(boxes):
     if len(boxes[0]) == 0:
         return False
     list_keys = [x for x in boxes[0] if x != 0 and x < len(boxes)]
-
+    list_keys = list(dict.fromkeys(list_keys))
     for i in list_keys:
         if boxes[i]:
             box = boxes[i]
