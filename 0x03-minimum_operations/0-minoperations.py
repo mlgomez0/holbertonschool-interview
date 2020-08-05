@@ -10,7 +10,6 @@ def minOperations(n):
         return 0
     if n == 2:
         return 2
-    max_div = n - 1
     cp = 2
     dh = 1
     H = 2
