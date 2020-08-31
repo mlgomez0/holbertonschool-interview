@@ -10,8 +10,8 @@ file_size = 0
 num = 1
 try:
     for line in sys.stdin:
-        args = line.split(' ')
-        if len(args) >= 2:
+        args = line.split()
+        if len(args) > 2:
             file_size = file_size + int(args[-1])
             if args[-2] in status_codes:
                 status_codes[args[-2]] += 1
