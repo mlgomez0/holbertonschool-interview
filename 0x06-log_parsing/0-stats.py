@@ -14,7 +14,8 @@ try:
         if len(args) > 2:
             file_size = file_size + int(args[-1])
             if args[-2] in status_codes:
-                status_codes[args[-2]] += 1
+                st = args[-2]
+                status_codes[st] += 1
         if num % 10 == 0:
             print('File size: {}'.format(file_size))
             for k, v in sorted(status_codes.items()):
