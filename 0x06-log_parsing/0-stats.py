@@ -2,7 +2,6 @@
 """ script that reads stdin line
     by line and computes metrics"""
 import sys
-import signal
 
 
 def exit_gracefully(file_size, status_codes):
@@ -10,7 +9,6 @@ def exit_gracefully(file_size, status_codes):
     print('File size: {}'.format(file_size))
     for k, v in sorted(status_codes.items()):
         print('{}: {}'.format(k, v))
-    sys.exit(0)
 
 status_codes = {}
 file_size = 0
